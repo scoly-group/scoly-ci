@@ -25,7 +25,7 @@ type PaymentOption = 'online' | 'on_delivery';
 const Checkout = () => {
   const { language, t } = useLanguage();
   const { items, kits, total, clearCart, loading: cartLoading, refreshCart } = useCart();
-  const { user, roles } = useAuth();
+  const { user } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
 

@@ -67,10 +67,10 @@
 - [x] Fonctions serveur déployées (suivi de commande, connexion par numéro, encaissement, accès établissement)
 
 ## Finalisation du 18/09/2026
-- [ ] Autoriser l’accès client par téléphone dès l’enregistrement d’une commande, même non confirmée
-- [ ] Réparer le logo et reproduire fidèlement la nouvelle fenêtre d’accueil sans ancien texte
-- [ ] Rendre visibles et confirmables les commandes payées à la livraison pour l’administration et la modération
-- [ ] Finaliser le préremplissage client par téléphone ou nom et la mise à jour de l’e-mail avec renvoi des reçus
-- [ ] Vérifier et terminer la demande d’accès établissement, sa validation, puis les notifications e-mail et SMS
-- [ ] Vérifier et terminer le suivi par livreur avec commandes reçues, en cours et livrées
-- [ ] Retirer les anciens accès et formulaires client devenus obsolètes sans toucher à /me et /team
+- [x] Autoriser l’accès client par téléphone dès l’enregistrement d’une commande, même non confirmée
+- [x] Réparer le logo et reproduire fidèlement la nouvelle fenêtre d’accueil sans ancien texte
+- [x] Rendre visibles et confirmables les commandes payées à la livraison pour l’administration et la modération
+- [x] Finaliser le préremplissage client par téléphone ou nom et la mise à jour de l’e-mail avec renvoi des reçus
+- [x] Vérifier et terminer la demande d’accès établissement, sa validation, puis les notifications e-mail et SMS
+- [x] Vérifier et terminer le suivi par livreur avec commandes reçues, en cours et livrées
+- [x] Retirer les anciens accès et formulaires client devenus obsolètes sans toucher à /me et /team

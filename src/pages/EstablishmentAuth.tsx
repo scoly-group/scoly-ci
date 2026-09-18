@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Loader2, Lock, Mail, Phone, School, UserPlus } from "lucide-react";
+import { Loader2, Lock, Mail, Phone, School, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -24,7 +24,6 @@ const EstablishmentAuth = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [newPassword, setNewPassword] = useState("");
   const [school, setSchool] = useState<SchoolOption | null>(null);
 
   const login = async (e: React.FormEvent) => {
@@ -56,45 +55,21 @@ const EstablishmentAuth = () => {
       toast.error("Sélectionnez votre établissement.");
       return;
     }
-    if (newPassword.length < 8) {
-      toast.error("Choisissez un mot de passe d'au moins 8 caractères.");
-      return;
-    }
     setBusy(true);
     try {
-      const { data, error } = await supabase.auth.signUp({
-        email: email.trim().toLowerCase(),
-        password: newPassword,
-        options: {
-          emailRedirectTo: `${window.location.origin}/me`,
-          data: { first_name: firstName, last_name: lastName, phone },
+      const { data, error } = await supabase.functions.invoke("school-manager-access", {
+        body: {
+          action: "request",
+          school_id: school.id,
+          first_name: firstName.trim(),
+          last_name: lastName.trim(),
+          email: email.trim().toLowerCase(),
+          phone: phone.trim(),
         },
       });
-      if (error) throw new Error(error.message);
-
-      if (!data.session) {
-        toast.success("Compte créé. Confirmez votre e-mail puis revenez sur cette page.");
-        setMode("login");
-        return;
-      }
-
-      await supabase.from("profiles").upsert({
-        id: data.user!.id,
-        first_name: firstName,
-        last_name: lastName,
-        email: email.trim().toLowerCase(),
-        phone,
-      });
-
-      const { data: request, error: requestError } = await supabase.functions.invoke(
-        "school-manager-access",
-        { body: { action: "request", school_id: school.id } },
-      );
-      if (requestError || request?.error) {
-        throw new Error("Compte créé, mais la demande d'accès n'a pas pu être envoyée.");
-      }
-
-      toast.success("Demande envoyée : l'administration doit valider votre accès.");
+      if (error || data?.error) throw new Error(data?.error || "La demande n'a pas pu être envoyée.");
+      toast.success("Demande envoyée. Votre compte sera créé après validation par l'administration.");
+      setMode("login");
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Création impossible.");
     } finally {
@@ -121,12 +96,12 @@ const EstablishmentAuth = () => {
               <span className="text-xs font-bold uppercase tracking-widest">Espace établissement</span>
             </div>
             <h1 className="text-2xl font-display font-bold text-foreground mt-2">
-              {mode === "login" ? "Connexion gérant" : "Créer un compte gérant"}
+              {mode === "login" ? "Connexion gérant" : "Demander un accès gérant"}
             </h1>
             <p className="text-sm text-muted-foreground mt-1">
               {mode === "login"
                 ? "Numéro de téléphone ou e-mail, puis votre mot de passe."
-                : "Votre accès aux revenus et commissions est activé après validation par l'administration."}
+                : "Votre compte sera créé uniquement après validation par l'administration."}
             </p>
 
             {mode === "login" ? (
@@ -165,7 +140,7 @@ const EstablishmentAuth = () => {
                   {busy ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Connexion…</> : "Se connecter"}
                 </Button>
                 <Button type="button" variant="outline" className="w-full gap-2" onClick={() => setMode("signup")}>
-                  <UserPlus size={16} /> Créer un compte
+                  <Send size={16} /> Demander un accès
                 </Button>
               </form>
             ) : (
@@ -213,21 +188,8 @@ const EstablishmentAuth = () => {
                     <SchoolCombobox value={school?.id ?? null} onChange={setSchool} />
                   </div>
                 </div>
-                <div>
-                  <Label htmlFor="signup-password">Mot de passe</Label>
-                  <Input
-                    id="signup-password"
-                    type="password"
-                    autoComplete="new-password"
-                    className="mt-1"
-                    placeholder="8 caractères minimum"
-                    value={newPassword}
-                    onChange={(e) => setNewPassword(e.target.value)}
-                    required
-                  />
-                </div>
                 <Button type="submit" variant="hero" className="w-full" disabled={busy}>
-                  {busy ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Création…</> : "Créer mon compte"}
+                  {busy ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Envoi…</> : "Envoyer ma demande"}
                 </Button>
                 <button type="button" className="w-full text-sm text-primary hover:underline" onClick={() => setMode("login")}>
                   J'ai déjà un compte
