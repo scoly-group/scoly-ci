@@ -79,6 +79,29 @@ Deno.serve(async (req) => {
       return json({ ok: true, pending: !existing?.is_approved, school: school.name });
     }
 
+    if (action === 'list_pending') {
+      const { data: roleRows } = await admin.from('user_roles').select('role').eq('user_id', userId);
+      const roles = (roleRows ?? []).map((r: { role: string }) => r.role);
+      if (!roles.some((r) => ['super_admin', 'moderator'].includes(r))) return json({ error: 'Forbidden' }, 403);
+
+      const { data: memberships, error } = await admin.from('school_managers')
+        .select('id,user_id,school_id,created_at')
+        .eq('is_approved', false)
+        .order('created_at', { ascending: false });
+      if (error) return json({ error: error.message }, 400);
+      const userIds = [...new Set((memberships ?? []).map((row) => row.user_id))];
+      const schoolIds = [...new Set((memberships ?? []).map((row) => row.school_id))];
+      const [{ data: profiles }, { data: schools }] = await Promise.all([
+        userIds.length ? admin.from('profiles').select('id,first_name,last_name,email,phone').in('id', userIds) : Promise.resolve({ data: [] }),
+        schoolIds.length ? admin.from('schools').select('id,name').in('id', schoolIds) : Promise.resolve({ data: [] }),
+      ]);
+      return json({ requests: (memberships ?? []).map((row) => ({
+        ...row,
+        profile: (profiles ?? []).find((profile) => profile.id === row.user_id) ?? null,
+        school: (schools ?? []).find((school) => school.id === row.school_id) ?? null,
+      })) });
+    }
+
     if (action === 'approve') {
       const { data: roleRows } = await admin.from('user_roles').select('role').eq('user_id', userId);
       const roles = (roleRows ?? []).map((r: { role: string }) => r.role);

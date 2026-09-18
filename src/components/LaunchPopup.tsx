@@ -1,24 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { CreditCard, Handshake, Loader2, PackageCheck, Phone, Search, ShoppingCart, Truck, X } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { ArrowRight, CreditCard, Handshake, Loader2, PackageCheck, Phone, Search, ShoppingCart, Truck, X } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { supabase } from "@/integrations/supabase/client";
-import logoAsset from "@/assets/logo-scoly-sb.png.asset.json";
+import { signInClientByPhone } from "@/lib/clientAuth";
+import logoAsset from "@/assets/logo-scoly-officiel.png.asset.json";
+import schoolBag from "@/assets/scoly-school-bag.png";
 
 const CAMPAIGN_KEY = "scolyWelcomePopup:2026-09-18";
 const FLOATING_DELAY_MS = 45000;
 
-const STATUS_LABEL: Record<string, string> = {
-  pending: "En attente de confirmation",
-  confirmed: "Commande confirmée",
-  shipped: "En cours de livraison",
-  delivered: "Livrée",
-  cancelled: "Annulée",
-};
-
 const OrderTracker = () => {
+  const navigate = useNavigate();
   const [phone, setPhone] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
@@ -30,12 +24,13 @@ const OrderTracker = () => {
     }
     setLoading(true);
     setResult(null);
-    const { data, error } = await supabase.functions.invoke("track-order", { body: { phone } });
-    const payload = (data ?? {}) as { found?: boolean; order?: { number: string; status: string } };
-    if (error) setResult("Suivi indisponible pour le moment.");
-    else if (!payload.found || !payload.order) setResult("Aucune commande trouvée avec ce numéro.");
-    else setResult(`Commande ${payload.order.number} : ${STATUS_LABEL[payload.order.status] ?? payload.order.status}.`);
-    setLoading(false);
+    try {
+      await signInClientByPhone({ phone, create: false });
+      navigate("/client", { replace: true });
+    } catch (error) {
+      setResult(error instanceof Error ? error.message : "Connexion impossible pour le moment.");
+      setLoading(false);
+    }
   };
 
   return (
@@ -53,7 +48,7 @@ const OrderTracker = () => {
           <Input value={phone} onChange={(event) => setPhone(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter") void search(); }} placeholder="Votre numéro de téléphone (ex. 07 02 58 44 57)" aria-label="Votre numéro de téléphone" className="h-11 pl-9 text-sm" />
         </div>
         <Button type="button" onClick={search} disabled={loading} size="icon" className="h-11 w-11 shrink-0" aria-label="Suivre ma commande">
-          {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Search className="h-5 w-5" />}
+          {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <ArrowRight className="h-5 w-5" />}
         </Button>
       </div>
       {result && <p className="mt-2 text-xs font-medium text-foreground">{result}</p>}
@@ -89,14 +84,17 @@ export const LaunchPopup = () => {
         <>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={close} className="fixed inset-0 z-[99999] bg-foreground/70 backdrop-blur-sm" />
           <div className="fixed inset-0 z-[100000] flex items-center justify-center p-3 pointer-events-none">
-            <motion.section role="dialog" aria-modal="true" aria-label="Bienvenue sur Scoly" initial={{ opacity: 0, y: 24, scale: .98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 20, scale: .98 }} className="pointer-events-auto relative max-h-[96vh] w-full max-w-[660px] overflow-y-auto rounded-xl border-4 border-primary bg-card p-4 shadow-2xl sm:p-7">
+             <motion.section role="dialog" aria-modal="true" aria-label="Bienvenue sur Scoly" initial={{ opacity: 0, y: 24, scale: .98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 20, scale: .98 }} className="pointer-events-auto relative max-h-[96vh] w-full max-w-[660px] overflow-y-auto rounded-xl border-4 border-primary bg-card p-4 shadow-2xl sm:p-7">
               <Button type="button" variant="ghost" size="icon" onClick={close} className="absolute right-2 top-2 z-10" aria-label="Fermer"><X /></Button>
-              <img src={logoAsset.url} alt="Scoly" className="mx-auto h-16 w-auto object-contain sm:h-24" />
+               <img src={logoAsset.url} alt="Scoly — Fournitures scolaires & bureautiques" className="mx-auto h-20 w-auto max-w-[72%] object-contain sm:h-28" />
               <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground sm:text-base">Bienvenue sur Scoly.</div>
 
-              <div className="mt-5 flex items-start gap-3">
-                <ShoppingCart className="mt-1 h-8 w-8 shrink-0 text-accent" />
-                <h2 className="text-xl font-extrabold uppercase leading-tight text-primary sm:text-3xl">Commander vos fournitures scolaires <span className="text-accent">en un clic</span></h2>
+               <div className="mt-4 grid grid-cols-[minmax(0,1fr)_7rem] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_12rem]">
+                 <div className="flex items-start gap-3">
+                   <ShoppingCart className="mt-1 h-8 w-8 shrink-0 text-accent" />
+                   <h2 className="text-xl font-extrabold uppercase leading-tight text-primary sm:text-3xl">Commander vos fournitures scolaires <span className="text-accent">en un clic</span></h2>
+                 </div>
+                 <img src={schoolBag} alt="Sac et fournitures scolaires" width={912} height={912} className="h-auto w-full object-contain" />
               </div>
 
               <div className="mt-5 grid gap-px overflow-hidden rounded-lg bg-border sm:grid-cols-2">

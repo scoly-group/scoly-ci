@@ -688,19 +688,20 @@ const OrdersTab = () => {
 
   const fetchOrders = async () => {
     setLoadError(null);
-    // Seules les commandes réellement payées sont suivies ici.
-    const paidStatuses = ["confirmed", "shipped", "delivered"];
+    // Les commandes en ligne sont visibles après paiement. Celles réglées à la
+    // livraison doivent être visibles dès leur création pour pouvoir être validées.
+    const visibleOrderFilter = "status.in.(confirmed,shipped,delivered),and(payment_option.eq.on_delivery,status.eq.pending)";
     let { data, error } = await supabase
       .from("orders")
       .select("*, profiles(first_name, last_name), order_items(*)")
-      .in("status", paidStatuses as any)
+      .or(visibleOrderFilter)
       .order("created_at", { ascending: false });
 
     if (error) {
       const fallback = await supabase
         .from("orders")
         .select("*, order_items(*)")
-        .in("status", paidStatuses as any)
+        .or(visibleOrderFilter)
         .order("created_at", { ascending: false });
       data = fallback.data as any;
       error = fallback.error;
@@ -741,11 +742,13 @@ const OrdersTab = () => {
 
   const getStatusBadge = (status: string) => {
     const colors: Record<string, string> = {
+      pending: "bg-amber-100 text-amber-800",
       confirmed: "bg-blue-100 text-blue-800",
       shipped: "bg-purple-100 text-purple-800",
       delivered: "bg-green-100 text-green-800",
     };
     const labels: Record<string, string> = {
+      pending: "À confirmer · paiement à la livraison",
       confirmed: "Payée",
       shipped: "Expédiée",
       delivered: "Livrée",
@@ -822,7 +825,9 @@ const OrdersTab = () => {
                               ))}
                             </div>
                             <div className="flex flex-wrap items-center justify-between gap-2 pt-2">
-                              <span className="text-sm text-muted-foreground">Montant payé</span>
+                              <span className="text-sm text-muted-foreground">
+                                {order.status === "pending" ? "Montant à encaisser à la livraison" : "Montant de la commande"}
+                              </span>
                               <span className="font-semibold">
                                 {Number(order.total_amount ?? 0).toLocaleString()} FCFA
                               </span>
@@ -863,7 +868,7 @@ const OrdersTab = () => {
                                 <p className="text-xs text-muted-foreground basis-full">
                                   La livraison est clôturée après la remise du commercial et la confirmation du client.
                                 </p>
-                                <ReceiptDownloadButton orderId={order.id} withEmail />
+                                {order.status !== "pending" && <ReceiptDownloadButton orderId={order.id} withEmail />}
                               </div>
                             </div>
                           </div>

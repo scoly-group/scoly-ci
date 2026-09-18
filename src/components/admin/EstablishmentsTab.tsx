@@ -114,6 +114,35 @@ const EstablishmentsTab = () => {
   const [managersFor, setManagersFor] = useState<Establishment | null>(null);
   const [managerQuery, setManagerQuery] = useState("");
 
+  const { data: accessRequests = [] } = useQuery({
+    queryKey: ["establishment-access-requests"],
+    queryFn: async () => {
+      const { data, error } = await supabase.functions.invoke("school-manager-access", { body: { action: "list_pending" } });
+      if (error || data?.error) throw new Error(data?.error || "Chargement impossible");
+      return (data?.requests || []) as Array<{
+        id: string;
+        created_at: string;
+        profile: { first_name: string | null; last_name: string | null; email: string | null; phone: string | null } | null;
+        school: { name: string } | null;
+      }>;
+    },
+  });
+
+  const reviewAccess = useMutation({
+    mutationFn: async ({ membershipId, approve }: { membershipId: string; approve: boolean }) => {
+      const { data, error } = await supabase.functions.invoke("school-manager-access", {
+        body: { action: "approve", membership_id: membershipId, approve },
+      });
+      if (error || data?.error) throw new Error(data?.error || "Validation impossible");
+    },
+    onSuccess: (_, variables) => {
+      toast.success(variables.approve ? "Compte gérant validé, e-mail et SMS envoyés" : "Demande refusée");
+      qc.invalidateQueries({ queryKey: ["establishment-access-requests"] });
+      qc.invalidateQueries({ queryKey: ["school-managers"] });
+    },
+    onError: (error: Error) => toast.error(error.message),
+  });
+
   const invokeSchools = async <T,>(body: Record<string, unknown>): Promise<T> => {
     const { data, error } = await supabase.functions.invoke("manage-schools", { body });
     const message = (data as { error?: string } | null)?.error;
@@ -368,6 +397,29 @@ const EstablishmentsTab = () => {
           </Card>
         ))}
       </div>
+
+      {accessRequests.length > 0 && (
+        <Card>
+          <CardHeader><CardTitle className="text-base">Demandes d’accès gérant en attente</CardTitle></CardHeader>
+          <CardContent className="space-y-3">
+            {accessRequests.map((request) => {
+              const managerName = [request.profile?.first_name, request.profile?.last_name].filter(Boolean).join(" ") || "Gérant";
+              return (
+                <div key={request.id} className="flex flex-col gap-3 border-b border-border pb-3 last:border-0 sm:flex-row sm:items-center">
+                  <div className="min-w-0 flex-1">
+                    <p className="font-semibold text-foreground">{managerName} · {request.school?.name || "Établissement"}</p>
+                    <p className="text-sm text-muted-foreground">{request.profile?.phone || "Téléphone non renseigné"}{request.profile?.email ? ` · ${request.profile.email}` : ""} · {dt(request.created_at)}</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button size="sm" onClick={() => reviewAccess.mutate({ membershipId: request.id, approve: true })} disabled={reviewAccess.isPending}>Valider</Button>
+                    <Button size="sm" variant="outline" onClick={() => reviewAccess.mutate({ membershipId: request.id, approve: false })} disabled={reviewAccess.isPending}>Refuser</Button>
+                  </div>
+                </div>
+              );
+            })}
+          </CardContent>
+        </Card>
+      )}
 
       <Tabs defaultValue="list">
         <TabsList>
