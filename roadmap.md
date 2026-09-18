@@ -74,3 +74,11 @@
 - [x] Vérifier et terminer la demande d’accès établissement, sa validation, puis les notifications e-mail et SMS
 - [x] Vérifier et terminer le suivi par livreur avec commandes reçues, en cours et livrées
 - [x] Retirer les anciens accès et formulaires client devenus obsolètes sans toucher à /me et /team
+
+## Demande du 18/09/2026 — notifications et pilotage
+- [ ] Supprimer définitivement les notifications multiples pour une même action
+- [ ] Notifier le client par SMS et e-mail à chaque étape, de la confirmation à la livraison
+- [ ] Alerter l’administration par SMS à chaque nouvelle commande, quel que soit le mode de paiement
+- [ ] Ne notifier le client d’une commande à la livraison qu’après validation par l’équipe
+- [ ] Finaliser le tableau de bord : chiffre d’affaires, modes de paiement, produits vendus et performances par période
+- [ ] Vérifier les envois, les données affichées et les parcours administrateur/modérateur
