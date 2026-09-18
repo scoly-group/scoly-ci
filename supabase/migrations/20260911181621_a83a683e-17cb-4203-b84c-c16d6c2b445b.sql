@@ -1,0 +1,1 @@
+DROP FUNCTION IF EXISTS public.moneyfusion_charge_amount(numeric);

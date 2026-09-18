@@ -1,0 +1,1 @@
+REVOKE ALL ON FUNCTION public.block_admin_role_assignment() FROM PUBLIC, anon, authenticated;

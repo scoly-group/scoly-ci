@@ -1,0 +1,61 @@
+# Scoly — Fournitures scolaires & bureautiques en Côte d'Ivoire
+
+> Scoly (scoly.ci) est la plateforme ivoirienne pour fournitures scolaires, manuels, articles de bureautique et kits scolaires. Livraison gratuite en Côte d'Ivoire et paiement Mobile Money sécurisé.
+
+## Pages principales
+- [Accueil](/)
+- [Boutique](/shop)
+- [Kit Scolaire](/kits-scolaires)
+- [Actualités](/actualites)
+- [Livraison & retours](/livraison-retours)
+
+## Catégories publiques
+- [Scoly Bureautique](/shop?category=scoly-bureautique)
+- [Scoly Librairie](/shop?category=scoly-librairie)
+- [Scoly Maternelle](/shop?category=scoly-maternelle)
+- [Scoly Primaire](/shop?category=scoly-primaire)
+- [Scoly Secondaire](/shop?category=scoly-secondaire)
+- [Scoly Université](/shop?category=scoly-universite)
+
+## Produits récents
+- [Mon cahier du soir, Français CE2,édit.NEI-CEDA](/shop/product/2bd5d11c-365e-41f7-bd3f-2bc971b415fa)
+- [évaluation 1,CE1,JD éditions](/shop/product/9880c7f8-8e8b-41d3-b292-03c41debff9c)
+- [Mon cahier journalier CE1, nouvelle édition Matrice](/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473)
+- [Zézette la poule et les chiots. Frat Mat édition](/shop/product/2656fab5-d348-4806-ac26-3dd610730048)
+- [Mon cahier journalier,CE2 nouvelle édition revue et corrigée, chronomaitre](/shop/product/766da737-e727-40ce-aae2-df698c974bcc)
+- [Ahoutou à l'école - Premier jour de classe](/shop/product/1415c24c-dd70-417c-8517-0c8379faff1a)
+- [Mathématiques CE2,édit.TABALA](/shop/product/735a3789-136b-46ba-9c0f-b5bf9ff46647)
+- [Histoire et géographie CE1,frat mat édition](/shop/product/06e95b4a-9c4f-4488-9220-831e1e10ae02)
+- [¡Más allá! Espagnol Seconde - Compétences et Réussite - Livret d'activités](/shop/product/e5254328-46b9-4079-97b0-ba15aafba2a6)
+- [français,CE1, édit. Eburnie](/shop/product/e8d1f2f6-5427-4199-87e9-b919ba56e562)
+- [Hp Ecran HP V20 HD+ - 19.5" - VGA - HDMI - 1600 X 900](/shop/product/ac4d9e81-d50a-41ef-9324-2a2787db6790)
+- [Mathématiques CE1 éditions éburnies](/shop/product/441ad753-d7cc-43ac-889b-f5684fd799c7)
+- [Sciences et technologies CE2,édit.NEI-CEDA](/shop/product/e20aaa73-530c-4ab6-a122-0bdf4e735fd8)
+- [Mon cahier d'excellence CE2,édit,SUPERNOVA](/shop/product/174b0d66-e7ce-423e-b789-a31e7d38dbf8)
+- [Le dessin éducatif .édit. NEI-CEDA](/shop/product/df816f1a-d637-4cba-b1c4-e870e33a834d)
+- [Le dessin éducatif CE2; édit.NEI-CEDA](/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d)
+- [Mes apprentissages à la maternelle - Moyenne Section 4 ans](/shop/product/05ed3071-fea3-445b-a681-30984a787fd9)
+- [Manuel CM1 - Histoire-Géographie - Collection Kosmos](/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1)
+- [Livre de Espagnol Horizons 1ère](/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768)
+- [Mathématiques CP1, Livret d'exercices - Collection Cristal](/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb)
+- [Collection Oxygène : Sciences et Technologie CM2](/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55)
+- [Français CM2 - Collection Frat Mat Scolaire](/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c)
+- [Outils pour le français - Guide Pédagogique + Banque de ressources CM2](/shop/product/4e113544-44b3-49a4-9d31-1211844d924d)
+- [Cartouche de toner cyan compatible](/shop/product/22777d3f-f9a8-43e9-842e-c361f4a00f2f)
+- [Mathématiques CE1  .édit. Les classiques ivoiriens](/shop/product/500e64da-5dac-4920-ab0a-5572ccc0818f)
+
+## Articles récents
+- [Bienvenue sur Scoly : L'Expertise au Service de l'Éducation et du Bureau en Côte d'Ivoire](/actualites/47157363-7835-489a-a4bd-5aefc4fc7b29)
+- [Comprendre le Papier Glacé 180g : Le Guide Technique et Stratégique pour vos Impressions](/actualites/45ee8854-c371-418e-bcfd-aab4e3778fde)
+- [Résultats Scolaires 2024-2025 : Une Progression du Taux de Réussite en Côte d'Ivoire](/actualites/73b7a84f-a115-4a99-b98c-d230edd3cbcb)
+- [L'Essentiel de la Bureautique : Booster la Productivité au Travail](/actualites/7fd0f2c0-9d7e-4466-a8cd-eec6ad968848)
+- [Scoly se réinvente — 4 nouvelles fonctionnalités pour révolutionner la rentrée scolaire !](/actualites/d866219c-f667-44c1-a155-d3ec941cc15e)
+- [Scoly se réinvente : 4 nouvelles fonctionnalités pour révolutionner la rentrée scolaire !](/actualites/888b1967-1069-47c4-8e58-e17a0dc798ea)
+- [NSIA Banque et Scoly : Un partenariat historique pour l'éducation digitale en Côte d'Ivoire](/actualites/932195a0-0272-420c-9319-2f60d932c47f)
+- [Réussir ses vacances sans oublier ses cours : Le guide ultime pour les élèves](/actualites/d94e1226-4bcc-49a9-ba03-d00b5e8c7909)
+- [École de la Deuxième Chance : Redonner Espoir et Avenir à la Jeunesse Ivoirienne](/actualites/c3cd8372-7f39-496a-a6bd-a3bd5c4ca6e5)
+- [Boostez votre Productivité avec Scoly : Le Guide des Fournitures de Qualité en Côte d'Ivoire](/actualites/042f21d0-1169-4e9f-ac1a-b9863c2734c5)
+
+## Fichiers SEO
+- [Sitemap XML](/sitemap.xml)
+- [Robots](/robots.txt)

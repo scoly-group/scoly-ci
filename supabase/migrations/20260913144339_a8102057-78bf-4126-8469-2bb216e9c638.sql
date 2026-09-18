@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.create_school_kit_commission() FROM PUBLIC, anon, authenticated;

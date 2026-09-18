@@ -1,0 +1,1 @@
+REVOKE ALL ON FUNCTION public.guard_vendor_settings_privileged_fields() FROM anon, authenticated, public;

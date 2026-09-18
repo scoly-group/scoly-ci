@@ -1,0 +1,22 @@
+project_id = "duxbzpsezdhvhprwjwmk"
+
+[functions.kkiapay-webhook]
+verify_jwt = false
+
+[functions.kkiapay-config]
+verify_jwt = false
+
+[functions.verify-kkiapay-payment]
+verify_jwt = false
+
+[functions.phone-login]
+verify_jwt = false
+
+[functions.phone-password-reset]
+verify_jwt = false
+
+[functions.client-phone-auth]
+verify_jwt = false
+
+[functions.track-order]
+verify_jwt = false
