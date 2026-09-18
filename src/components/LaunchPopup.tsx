@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { signInClientByPhone } from "@/lib/clientAuth";
 import logoAsset from "@/assets/logo-scoly-officiel.png.asset.json";
+import schoolBag from "@/assets/scoly-school-bag.png";
 
 const CAMPAIGN_KEY = "scolyWelcomePopup:2026-09-18";
 const FLOATING_DELAY_MS = 45000;
@@ -88,9 +89,12 @@ export const LaunchPopup = () => {
                <img src={logoAsset.url} alt="Scoly — Fournitures scolaires & bureautiques" className="mx-auto h-20 w-auto max-w-[72%] object-contain sm:h-28" />
               <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground sm:text-base">Bienvenue sur Scoly.</div>
 
-              <div className="mt-5 flex items-start gap-3">
-                <ShoppingCart className="mt-1 h-8 w-8 shrink-0 text-accent" />
-                <h2 className="text-xl font-extrabold uppercase leading-tight text-primary sm:text-3xl">Commander vos fournitures scolaires <span className="text-accent">en un clic</span></h2>
+               <div className="mt-4 grid grid-cols-[minmax(0,1fr)_7rem] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_12rem]">
+                 <div className="flex items-start gap-3">
+                   <ShoppingCart className="mt-1 h-8 w-8 shrink-0 text-accent" />
+                   <h2 className="text-xl font-extrabold uppercase leading-tight text-primary sm:text-3xl">Commander vos fournitures scolaires <span className="text-accent">en un clic</span></h2>
+                 </div>
+                 <img src={schoolBag} alt="Sac et fournitures scolaires" width={912} height={912} className="h-auto w-full object-contain" />
               </div>
 
               <div className="mt-5 grid gap-px overflow-hidden rounded-lg bg-border sm:grid-cols-2">
