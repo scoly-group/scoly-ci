@@ -36,9 +36,24 @@ async function rolesFor(admin: Admin, userId: string) {
 }
 
 async function profileMatches(admin: Admin, phone: { digits: string; e164: string }) {
-  const variants = [phone.e164, phone.e164.replace('+225', '0'), phone.digits];
-  const { data } = await admin.from('profiles').select('id,phone,email,first_name,last_name').in('phone', variants).limit(20);
-  return data ?? [];
+  const { data } = await admin.from('profiles').select('id,phone,email,first_name,last_name').not('phone', 'is', null).limit(5000);
+  return (data ?? []).filter((row: { phone: string | null }) => {
+    const normalized = normalize(String(row.phone ?? ''));
+    return normalized?.digits === phone.digits;
+  });
+}
+
+async function uniqueProfileByName(admin: Admin, fullName: string) {
+  const parts = fullName.trim().replace(/\s+/g, ' ').split(' ');
+  if (parts.length < 2) return null;
+  const firstName = parts[0];
+  const lastName = parts.slice(1).join(' ');
+  const { data } = await admin.from('profiles')
+    .select('id,phone,email,first_name,last_name')
+    .ilike('first_name', firstName)
+    .ilike('last_name', lastName)
+    .limit(2);
+  return data?.length === 1 ? data[0] : null;
 }
 
 async function resolveClient(admin: Admin, phone: { digits: string; e164: string }, create: boolean, fullName: string, email: string) {
@@ -134,14 +149,22 @@ Deno.serve(async (req) => {
     }
 
     const parsed = z.object({
-      phone: z.string().min(8).max(30),
+      phone: z.string().min(8).max(30).optional(),
       full_name: z.string().trim().max(200).optional().default(''),
       email: z.union([z.literal(''), z.string().trim().email().max(255)]).optional().default(''),
       create: z.boolean().optional().default(true),
       action: z.string().optional(),
     }).safeParse(body);
     if (!parsed.success) return json({ error: 'Informations invalides' }, 400);
-    const phone = normalize(parsed.data.phone);
+
+    if (action === 'profile' && !parsed.data.phone && parsed.data.full_name) {
+      const namedProfile = await uniqueProfileByName(admin, parsed.data.full_name);
+      if (!namedProfile) return json({ found: false });
+      const { data: address } = await admin.from('user_addresses').select('address').eq('user_id', namedProfile.id).order('is_default', { ascending: false }).order('created_at', { ascending: false }).limit(1).maybeSingle();
+      return json({ found: true, profile: { ...namedProfile, delivery_place: address?.address ?? '' } });
+    }
+
+    const phone = parsed.data.phone ? normalize(parsed.data.phone) : null;
     if (!phone) return json({ error: 'Numéro de téléphone invalide' }, 400);
 
     const resolved = await resolveClient(admin, phone, parsed.data.create, parsed.data.full_name, parsed.data.email.toLowerCase());

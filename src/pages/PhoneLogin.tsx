@@ -41,7 +41,7 @@ const PhoneLogin = () => {
         <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground"><Phone /></div>
           <h1 className="mt-4 text-center text-2xl font-bold">Espace client</h1>
-          <p className="mt-2 text-center text-sm text-muted-foreground">Entrez uniquement le numéro utilisé lors de votre première commande.</p>
+          <p className="mt-2 text-center text-sm text-muted-foreground">Entrez uniquement le numéro utilisé pour votre commande, même si elle est encore en attente.</p>
           <form onSubmit={submit} className="mt-6 space-y-4">
             <div><Label htmlFor="client-phone">Numéro de téléphone</Label><PhoneInput id="client-phone" value={phone} onChange={setPhone} required className="mt-1" /></div>
             <Button type="submit" variant="hero" className="w-full" disabled={busy}>{busy ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Connexion…</> : "Retrouver mon espace"}</Button>

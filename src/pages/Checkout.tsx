@@ -25,7 +25,7 @@ type PaymentOption = 'online' | 'on_delivery';
 const Checkout = () => {
   const { language, t } = useLanguage();
   const { items, kits, total, clearCart, loading: cartLoading, refreshCart } = useCart();
-  const { user } = useAuth();
+  const { user, roles } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -250,18 +250,23 @@ const Checkout = () => {
     return true;
   };
 
-  const autofillClient = async () => {
-    if (user || formData.phone.replace(/\D/g, '').length < 8) return;
+  const autofillClient = async (source: 'phone' | 'name' = 'phone') => {
+    if (user) return;
+    if (source === 'phone' && formData.phone.replace(/\D/g, '').length < 8) return;
+    if (source === 'name' && formData.fullName.trim().length < 4) return;
     setLookupBusy(true);
     try {
       const { data } = await supabase.functions.invoke('client-phone-auth', {
-        body: { action: 'profile', phone: formData.phone, create: false },
+        body: source === 'phone'
+          ? { action: 'profile', phone: formData.phone, create: false }
+          : { action: 'profile', full_name: formData.fullName, create: false },
       });
-      const found = data?.profile as { first_name?: string; last_name?: string; email?: string; delivery_place?: string } | undefined;
+      const found = data?.profile as { first_name?: string; last_name?: string; email?: string; phone?: string; delivery_place?: string } | undefined;
       if (found) setFormData((current) => ({
         ...current,
         fullName: [found.first_name, found.last_name].filter(Boolean).join(' ') || current.fullName,
         email: found.email || current.email,
+        phone: found.phone || current.phone,
         deliveryPlace: found.delivery_place || current.deliveryPlace,
       }));
     } finally { setLookupBusy(false); }
@@ -599,6 +604,7 @@ const Checkout = () => {
                           id="fullName"
                           value={formData.fullName}
                           onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                          onBlur={() => void autofillClient('name')}
                           required
                           className="mt-1"
                         />
@@ -609,7 +615,7 @@ const Checkout = () => {
                           id="phone"
                           value={formData.phone}
                           onChange={(phone) => setFormData({ ...formData, phone })}
-                          onBlur={() => void autofillClient()}
+                          onBlur={() => void autofillClient('phone')}
                           required
                           className="mt-1"
                         />
