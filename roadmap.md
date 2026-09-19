@@ -82,3 +82,11 @@
 - [ ] Ne notifier le client d’une commande à la livraison qu’après validation par l’équipe
 - [ ] Finaliser le tableau de bord : chiffre d’affaires, modes de paiement, produits vendus et performances par période
 - [ ] Vérifier les envois, les données affichées et les parcours administrateur/modérateur
+
+## Demande du 19/09/2026 — finalisation intégrale
+- [ ] Réparer définitivement le logo du popup avec le logo fourni
+- [ ] Appliquer la déduplication des notifications et les règles SMS/e-mail par mode de paiement
+- [ ] Brancher les statistiques réelles de trafic avec périodes, sources, pages, pays et visiteurs uniques
+- [ ] Fusionner actualités et publicités dans une page admin avec modes manuel et IA structurante
+- [ ] Afficher les publicités actives dans le hero et dans un flash animé sans perturber le défilement
+- [ ] Vérifier les images, logos et parcours concernés
