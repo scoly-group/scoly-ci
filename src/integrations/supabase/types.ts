@@ -1607,6 +1607,33 @@ export type Database = {
         }
         Relationships: []
       }
+      notification_dispatches: {
+        Row: {
+          channel: string
+          created_at: string
+          event: string
+          id: string
+          order_id: string | null
+          recipient: string
+        }
+        Insert: {
+          channel: string
+          created_at?: string
+          event: string
+          id?: string
+          order_id?: string | null
+          recipient: string
+        }
+        Update: {
+          channel?: string
+          created_at?: string
+          event?: string
+          id?: string
+          order_id?: string | null
+          recipient?: string
+        }
+        Relationships: []
+      }
       notifications: {
         Row: {
           created_at: string | null
@@ -3952,6 +3979,15 @@ export type Database = {
           blocked_until: string
           remaining_attempts: number
         }[]
+      }
+      claim_notification: {
+        Args: {
+          _channel: string
+          _event: string
+          _order_id: string
+          _recipient: string
+        }
+        Returns: boolean
       }
       claim_paid_order_email: { Args: { _order_id: string }; Returns: boolean }
       cleanup_expired_data: { Args: never; Returns: undefined }
