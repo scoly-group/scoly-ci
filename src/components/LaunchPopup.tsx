@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { signInClientByPhone } from "@/lib/clientAuth";
-import logoAsset from "@/assets/logo-scoly-officiel.png.asset.json";
+import logoScoly from "@/assets/logo-scoly-officiel.png";
 import schoolBag from "@/assets/scoly-school-bag.png";
 
 const CAMPAIGN_KEY = "scolyWelcomePopup:2026-09-18";
@@ -86,7 +86,7 @@ export const LaunchPopup = () => {
           <div className="fixed inset-0 z-[100000] flex items-center justify-center p-3 pointer-events-none">
              <motion.section role="dialog" aria-modal="true" aria-label="Bienvenue sur Scoly" initial={{ opacity: 0, y: 24, scale: .98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 20, scale: .98 }} className="pointer-events-auto relative max-h-[96vh] w-full max-w-[660px] overflow-y-auto rounded-xl border-4 border-primary bg-card p-4 shadow-2xl sm:p-7">
               <Button type="button" variant="ghost" size="icon" onClick={close} className="absolute right-2 top-2 z-10" aria-label="Fermer"><X /></Button>
-               <img src={logoAsset.url} alt="Scoly — Fournitures scolaires & bureautiques" className="mx-auto h-20 w-auto max-w-[72%] object-contain sm:h-28" />
+               <img src={logoScoly} alt="Scoly — Fournitures scolaires & bureautiques" width={900} height={600} className="mx-auto h-20 w-auto max-w-[72%] object-contain sm:h-28" />
               <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground sm:text-base">Bienvenue sur Scoly.</div>
 
                <div className="mt-4 grid grid-cols-[minmax(0,1fr)_7rem] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_12rem]">
