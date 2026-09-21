@@ -13,6 +13,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import PageLoader from "@/components/PageLoader";
 import { SessionSecurityProvider } from "@/components/SessionSecurityProvider";
 import RoleGuard from "@/components/RoleGuard";
+import useVisitTracker from "@/hooks/useVisitTracker";
 import { useAuth } from "@/contexts/AuthContext";
 import { MANAGER_ROLES, isManager, REFERENT_ROLES, TEAM_ROLES, getDashboardPathForRoles, hasPrivilegedRole, isTeamMember } from "@/lib/rbac";
 
@@ -97,6 +98,12 @@ const ClientAccess = () => {
   return <Account />;
 };
 
+/** Enregistre chaque page consultée pour l'onglet Trafic de l'administration. */
+const VisitTracker = () => {
+  useVisitTracker();
+  return null;
+};
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -121,6 +128,7 @@ const App = () => (
                 <Sonner />
                 <BrowserRouter>
                   <ScrollToTop />
+                  <VisitTracker />
                   {/* Skip to content - Accessibility */}
                   <a
                     href="#main-content"
