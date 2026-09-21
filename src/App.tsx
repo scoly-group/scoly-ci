@@ -98,6 +98,12 @@ const ClientAccess = () => {
   return <Account />;
 };
 
+/** Enregistre chaque page consultée pour l'onglet Trafic de l'administration. */
+const VisitTracker = () => {
+  useVisitTracker();
+  return null;
+};
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -122,6 +128,7 @@ const App = () => (
                 <Sonner />
                 <BrowserRouter>
                   <ScrollToTop />
+                  <VisitTracker />
                   {/* Skip to content - Accessibility */}
                   <a
                     href="#main-content"
