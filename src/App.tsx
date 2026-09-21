@@ -13,6 +13,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import PageLoader from "@/components/PageLoader";
 import { SessionSecurityProvider } from "@/components/SessionSecurityProvider";
 import RoleGuard from "@/components/RoleGuard";
+import useVisitTracker from "@/hooks/useVisitTracker";
 import { useAuth } from "@/contexts/AuthContext";
 import { MANAGER_ROLES, isManager, REFERENT_ROLES, TEAM_ROLES, getDashboardPathForRoles, hasPrivilegedRole, isTeamMember } from "@/lib/rbac";
 
