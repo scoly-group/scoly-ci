@@ -84,32 +84,32 @@ export const LaunchPopup = () => {
         <>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={close} className="fixed inset-0 z-[99999] bg-foreground/70 backdrop-blur-sm" />
           <div className="fixed inset-0 z-[100000] flex items-center justify-center p-3 pointer-events-none">
-             <motion.section role="dialog" aria-modal="true" aria-label="Bienvenue sur Scoly" initial={{ opacity: 0, y: 24, scale: .98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 20, scale: .98 }} className="pointer-events-auto relative max-h-[96vh] w-full max-w-[660px] overflow-y-auto rounded-xl border-4 border-primary bg-card p-4 shadow-2xl sm:p-7">
+             <motion.section role="dialog" aria-modal="true" aria-label="Bienvenue sur Scoly" initial={{ opacity: 0, y: 24, scale: .98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 20, scale: .98 }} className="pointer-events-auto relative max-h-[92dvh] w-full max-w-[min(600px,94vw)] overflow-y-auto overscroll-contain rounded-xl border-2 sm:border-4 border-primary bg-card p-3 shadow-2xl sm:p-6">
               <Button type="button" variant="ghost" size="icon" onClick={close} className="absolute right-2 top-2 z-10" aria-label="Fermer"><X /></Button>
-               <img src={logoScoly} alt="Scoly — Fournitures scolaires & bureautiques" width={900} height={600} className="mx-auto h-20 w-auto max-w-[72%] object-contain sm:h-28" />
-              <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground sm:text-base">Bienvenue sur Scoly.</div>
+               <img src={logoScoly} alt="Scoly — Fournitures scolaires & bureautiques" width={900} height={600} className="mx-auto h-12 w-auto max-w-[60%] object-contain sm:h-20 [@media(max-height:700px)]:h-12" />
+              <div className="mt-2 inline-flex items-center gap-2 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground sm:text-base">Bienvenue sur Scoly.</div>
 
-               <div className="mt-4 grid grid-cols-[minmax(0,1fr)_7rem] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_12rem]">
+               <div className="mt-3 grid grid-cols-[minmax(0,1fr)_4.5rem] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_9rem]">
                  <div className="flex items-start gap-3">
-                   <ShoppingCart className="mt-1 h-8 w-8 shrink-0 text-accent" />
-                   <h2 className="text-xl font-extrabold uppercase leading-tight text-primary sm:text-3xl">Commander vos fournitures scolaires <span className="text-accent">en un clic</span></h2>
+                   <ShoppingCart className="mt-1 h-6 w-6 shrink-0 text-accent sm:h-8 sm:w-8" />
+                   <h2 className="text-base font-extrabold uppercase leading-tight text-primary sm:text-2xl">Commander vos fournitures scolaires <span className="text-accent">en un clic</span></h2>
                  </div>
                  <img src={schoolBag} alt="Sac et fournitures scolaires" width={912} height={912} className="h-auto w-full object-contain" />
               </div>
 
-              <div className="mt-5 grid gap-px overflow-hidden rounded-lg bg-border sm:grid-cols-2">
-                <div className="flex items-center gap-3 bg-primary/5 p-4"><CreditCard className="h-8 w-8 shrink-0 text-primary" /><p className="font-bold text-primary">Paiement en ligne ou à la livraison</p></div>
-                <div className="flex items-center gap-3 bg-primary/5 p-4"><Truck className="h-8 w-8 shrink-0 text-accent" /><p className="font-bold text-primary">Livraison gratuite partout en Côte d’Ivoire</p></div>
+              <div className="mt-3 grid gap-px overflow-hidden rounded-lg bg-border sm:grid-cols-2">
+                <div className="flex items-center gap-2 bg-primary/5 p-2.5 sm:p-3 text-sm"><CreditCard className="h-6 w-6 shrink-0 text-primary" /><p className="font-bold text-primary">Paiement en ligne ou à la livraison</p></div>
+                <div className="flex items-center gap-2 bg-primary/5 p-2.5 sm:p-3 text-sm"><Truck className="h-6 w-6 shrink-0 text-accent" /><p className="font-bold text-primary">Livraison gratuite partout en Côte d’Ivoire</p></div>
               </div>
 
-              <div className="my-4 rounded-lg bg-accent/10 p-4 text-center">
-                <div className="flex items-center justify-center gap-2"><PackageCheck className="h-7 w-7 text-primary" /><h3 className="font-extrabold text-primary">Vous avez une liste de fournitures particulières ?</h3></div>
+              <div className="my-3 rounded-lg bg-accent/10 p-3 text-center">
+                <div className="flex items-center justify-center gap-2"><PackageCheck className="h-5 w-5 shrink-0 text-primary" /><h3 className="text-sm sm:text-base font-extrabold text-primary">Vous avez une liste de fournitures particulières ?</h3></div>
                 <p className="mt-1 text-sm text-foreground">Contactez nous pour une commande personnalisée.</p>
-                <a href="tel:+2250702584457" className="mx-auto mt-3 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2 font-bold text-accent-foreground"><Phone size={19} /> +225 07 02 58 44 57</a>
+                <a href="tel:+2250702584457" className="mx-auto mt-2 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-1.5 text-sm font-bold sm:text-base text-accent-foreground"><Phone size={19} /> +225 07 02 58 44 57</a>
               </div>
 
               <OrderTracker />
-              <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold text-primary"><Handshake size={20} /> Merci de votre confiance.</div>
+              <div className="mt-3 flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold text-primary"><Handshake size={20} /> Merci de votre confiance.</div>
             </motion.section>
           </div>
         </>

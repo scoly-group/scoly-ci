@@ -32,7 +32,8 @@ import {
 } from "recharts";
 import { supabase } from "@/integrations/supabase/client";
 
-type Period = "7" | "30" | "90";
+type Period = "7" | "30" | "90" | "365";
+interface SourceRow { source: string; views: number; visitors: number }
 
 interface DayRow { day: string; views: number; visitors: number }
 interface CountryRow { country: string; country_code: string | null; views: number; visitors: number }
@@ -50,6 +51,7 @@ interface Overview {
   by_city: CityRow[];
   by_page: PageRow[];
   by_device: DeviceRow[];
+  by_source: SourceRow[];
 }
 
 const EMPTY: Overview = {
@@ -62,6 +64,7 @@ const EMPTY: Overview = {
   by_city: [],
   by_page: [],
   by_device: [],
+  by_source: [],
 };
 
 /** Drapeau emoji à partir du code ISO à deux lettres. */
@@ -102,6 +105,11 @@ const normalize = (raw: any): Overview => {
     by_device: arr(raw.by_device).map((d: any) => ({
       device: String(d.device ?? "inconnu"),
       views: num(d.views),
+    })),
+    by_source: arr(raw.by_source).map((x: any) => ({
+      source: String(x.source ?? "Direct"),
+      views: num(x.views),
+      visitors: num(x.visitors),
     })),
   };
 };
@@ -192,6 +200,7 @@ const TrafficTab = () => {
               <SelectItem value="7">7 derniers jours</SelectItem>
               <SelectItem value="30">30 derniers jours</SelectItem>
               <SelectItem value="90">90 derniers jours</SelectItem>
+              <SelectItem value="365">1 an</SelectItem>
             </SelectContent>
           </Select>
           <Button variant="outline" size="icon" className="shrink-0" onClick={fetchOverview} disabled={loading}>
@@ -286,6 +295,33 @@ const TrafficTab = () => {
           </Card>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <Card className="min-w-0 border-border/60">
+              <CardHeader>
+                <CardTitle className="text-base font-semibold flex items-center gap-2">
+                  <Globe size={16} /> Sources de visite
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="min-w-0 space-y-3">
+                {data.by_source.length === 0 ? (
+                  <p className="text-center text-muted-foreground py-8 text-sm">Aucune donnée</p>
+                ) : (
+                  data.by_source.slice(0, 10).map((src, i) => (
+                    <div key={`${src.source}-${i}`} className="space-y-1">
+                      <div className="flex items-center justify-between gap-2 text-sm">
+                        <span className="truncate">{src.source}</span>
+                        <span className="shrink-0 text-muted-foreground">
+                          {src.views.toLocaleString("fr-FR")} vues · {src.visitors.toLocaleString("fr-FR")} visiteurs
+                        </span>
+                      </div>
+                      <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
+                        <div className="h-full rounded-full bg-accent" style={{ width: `${Math.max(4, (src.views / Math.max(1, data.by_source[0].views)) * 100)}%` }} />
+                      </div>
+                    </div>
+                  ))
+                )}
+              </CardContent>
+            </Card>
+
             <Card className="min-w-0 border-border/60">
               <CardHeader>
                 <CardTitle className="text-base font-semibold flex items-center gap-2">
