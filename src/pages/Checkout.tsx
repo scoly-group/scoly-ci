@@ -406,8 +406,11 @@ const Checkout = () => {
       setOrderId(order.id);
       setOrderNumber(order.id.slice(0, 8).toUpperCase());
 
-      // Aucun SMS à cette étape : les messages partent uniquement après
-      // confirmation du paiement par l'opérateur (retour webhook KkiaPay).
+      // Alerte unique à l'équipe (numéro + mode de paiement). Le client n'est
+      // prévenu qu'après encaissement ou validation par l'équipe.
+      void supabase.functions.invoke('notify-order', {
+        body: { order_id: order.id, event: 'order_placed' },
+      }).catch(() => undefined);
 
       if (option === 'on_delivery') {
         // Paiement à la livraison : la commande part telle quelle, l'équipe
