@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://scoly.ci/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/" />
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/shop</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop" />
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/kits-scolaires</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/kits-scolaires" />
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/actualites</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites" />
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/parrainage</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/parrainage" />
@@ -52,7 +52,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/about</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/about" />
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/contact</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/contact" />
@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/faq</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/faq" />
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/livraison-retours</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/livraison-retours" />
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/mentions-legales</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/mentions-legales" />
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/terms</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/terms" />
@@ -112,7 +112,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/privacy</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/privacy" />
@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://scoly.ci/cookies</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/cookies" />
@@ -191,6 +191,76 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop?category=scoly-universite" />
   </url>
   <url>
+    <loc>https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
+  </url>
+  <url>
+    <loc>https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
+  </url>
+  <url>
+    <loc>https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
+  </url>
+  <url>
+    <loc>https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
+  </url>
+  <url>
+    <loc>https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
+  </url>
+  <url>
+    <loc>https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
+  </url>
+  <url>
+    <loc>https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
+  </url>
+  <url>
     <loc>https://scoly.ci/shop/product/2bd5d11c-365e-41f7-bd3f-2bc971b415fa</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -211,16 +281,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/9880c7f8-8e8b-41d3-b292-03c41debff9c" />
   </url>
   <url>
-    <loc>https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
-  </url>
-  <url>
     <loc>https://scoly.ci/shop/product/2656fab5-d348-4806-ac26-3dd610730048</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -231,14 +291,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/2656fab5-d348-4806-ac26-3dd610730048" />
   </url>
   <url>
-    <loc>https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc</loc>
+    <loc>https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/766da737-e727-40ce-aae2-df698c974bcc" />
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/2295c713-78c4-4cc4-8d6c-c74961543473" />
   </url>
   <url>
     <loc>https://scoly.ci/shop/product/1415c24c-dd70-417c-8517-0c8379faff1a</loc>
@@ -339,76 +399,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/df816f1a-d637-4cba-b1c4-e870e33a834d" />
     <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/df816f1a-d637-4cba-b1c4-e870e33a834d" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/df816f1a-d637-4cba-b1c4-e870e33a834d" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/1e8c1f76-00c2-41db-9197-11c0226f7e8d" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/05ed3071-fea3-445b-a681-30984a787fd9" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
   </url>
   <url>
     <loc>https://scoly.ci/shop/product/4e113544-44b3-49a4-9d31-1211844d924d</loc>
@@ -4231,16 +4221,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/23642e8b-cd8e-41f2-ba77-09281276e6d0" />
   </url>
   <url>
-    <loc>https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/6cc0ec39-6446-48bf-9b48-78077a91cf6f" />
-  </url>
-  <url>
     <loc>https://scoly.ci/shop/product/5842d7c9-feae-4a2d-8297-ec86502dddd3</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -4499,16 +4479,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/ca262636-bc88-451a-aaae-0997e3c9cb1f" />
     <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/ca262636-bc88-451a-aaae-0997e3c9cb1f" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/ca262636-bc88-451a-aaae-0997e3c9cb1f" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/f8551545-d1bd-43b4-8345-f53a4ad1a385" />
   </url>
   <url>
     <loc>https://scoly.ci/shop/product/d655db71-d05b-4732-bc33-1a420114ebc8</loc>
@@ -5121,16 +5091,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/6b1ff276-b07f-451b-92a4-c2d2b0454ca1" />
   </url>
   <url>
-    <loc>https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/7de35973-858f-4ea1-bc3a-081b22f13c3c" />
-  </url>
-  <url>
     <loc>https://scoly.ci/shop/product/d61c7f4c-c366-465d-917a-09a1078c6a0e</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -5361,16 +5321,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/346c5a40-9deb-4bb1-a434-fc28ef67b70f" />
   </url>
   <url>
-    <loc>https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/915007d1-75bb-441c-a82a-6e021cc8f45c" />
-  </url>
-  <url>
     <loc>https://scoly.ci/shop/product/1a7dc081-1d51-4ced-bec0-19a5c53c0e3c</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -5421,103 +5371,53 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/c64e1214-67ff-4105-965c-68b94552b84b" />
   </url>
   <url>
-    <loc>https://scoly.ci/actualites/47157363-7835-489a-a4bd-5aefc4fc7b29</loc>
+    <loc>https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/47157363-7835-489a-a4bd-5aefc4fc7b29" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/47157363-7835-489a-a4bd-5aefc4fc7b29" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/47157363-7835-489a-a4bd-5aefc4fc7b29" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/47157363-7835-489a-a4bd-5aefc4fc7b29" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/4492dbfa-7684-4089-a4f1-8a7e13c7b2e1" />
   </url>
   <url>
-    <loc>https://scoly.ci/actualites/45ee8854-c371-418e-bcfd-aab4e3778fde</loc>
+    <loc>https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/45ee8854-c371-418e-bcfd-aab4e3778fde" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/45ee8854-c371-418e-bcfd-aab4e3778fde" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/45ee8854-c371-418e-bcfd-aab4e3778fde" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/45ee8854-c371-418e-bcfd-aab4e3778fde" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/43e66209-01ee-4abf-9bc2-4ca106089768" />
   </url>
   <url>
-    <loc>https://scoly.ci/actualites/73b7a84f-a115-4a99-b98c-d230edd3cbcb</loc>
+    <loc>https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/73b7a84f-a115-4a99-b98c-d230edd3cbcb" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/73b7a84f-a115-4a99-b98c-d230edd3cbcb" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/73b7a84f-a115-4a99-b98c-d230edd3cbcb" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/73b7a84f-a115-4a99-b98c-d230edd3cbcb" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/83c27b4c-2f4f-4ba9-b049-c8804f5b72cb" />
   </url>
   <url>
-    <loc>https://scoly.ci/actualites/7fd0f2c0-9d7e-4466-a8cd-eec6ad968848</loc>
+    <loc>https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/7fd0f2c0-9d7e-4466-a8cd-eec6ad968848" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/7fd0f2c0-9d7e-4466-a8cd-eec6ad968848" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/7fd0f2c0-9d7e-4466-a8cd-eec6ad968848" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/7fd0f2c0-9d7e-4466-a8cd-eec6ad968848" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/6ecdd911-cfd9-4fee-ae15-ffdefbc00e55" />
   </url>
   <url>
-    <loc>https://scoly.ci/actualites/d866219c-f667-44c1-a155-d3ec941cc15e</loc>
+    <loc>https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/d866219c-f667-44c1-a155-d3ec941cc15e" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/d866219c-f667-44c1-a155-d3ec941cc15e" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/d866219c-f667-44c1-a155-d3ec941cc15e" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/d866219c-f667-44c1-a155-d3ec941cc15e" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/actualites/888b1967-1069-47c4-8e58-e17a0dc798ea</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/888b1967-1069-47c4-8e58-e17a0dc798ea" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/888b1967-1069-47c4-8e58-e17a0dc798ea" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/888b1967-1069-47c4-8e58-e17a0dc798ea" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/888b1967-1069-47c4-8e58-e17a0dc798ea" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/actualites/932195a0-0272-420c-9319-2f60d932c47f</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/932195a0-0272-420c-9319-2f60d932c47f" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/932195a0-0272-420c-9319-2f60d932c47f" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/932195a0-0272-420c-9319-2f60d932c47f" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/932195a0-0272-420c-9319-2f60d932c47f" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/actualites/d94e1226-4bcc-49a9-ba03-d00b5e8c7909</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/d94e1226-4bcc-49a9-ba03-d00b5e8c7909" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/d94e1226-4bcc-49a9-ba03-d00b5e8c7909" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/d94e1226-4bcc-49a9-ba03-d00b5e8c7909" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/d94e1226-4bcc-49a9-ba03-d00b5e8c7909" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/actualites/c3cd8372-7f39-496a-a6bd-a3bd5c4ca6e5</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/c3cd8372-7f39-496a-a6bd-a3bd5c4ca6e5" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/c3cd8372-7f39-496a-a6bd-a3bd5c4ca6e5" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/c3cd8372-7f39-496a-a6bd-a3bd5c4ca6e5" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/c3cd8372-7f39-496a-a6bd-a3bd5c4ca6e5" />
-  </url>
-  <url>
-    <loc>https://scoly.ci/actualites/042f21d0-1169-4e9f-ac1a-b9863c2734c5</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/actualites/042f21d0-1169-4e9f-ac1a-b9863c2734c5" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/actualites/042f21d0-1169-4e9f-ac1a-b9863c2734c5" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/actualites/042f21d0-1169-4e9f-ac1a-b9863c2734c5" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/actualites/042f21d0-1169-4e9f-ac1a-b9863c2734c5" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CI" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scoly.ci/shop/product/675bb9d7-55f0-45f7-bda0-d0dcd80da79c" />
   </url>
 </urlset>
